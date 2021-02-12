@@ -28,18 +28,38 @@
             </a>
                 
 
-                <nav class="c-nav">
-                    <ul class="c-nav-list">
-                        <li class="c-nav-list__item">Africa</li>
-                        <li class="c-nav-list__item">Americas</li>
-                        <li class="c-nav-list__item">Asia</li>
-                        <li class="c-nav-list__item">Europe</li>
-                        <li class="c-nav-list__item">Oceania</li>
-                    </ul>
+                <nav class="c-nav c-nav-list ">
+                    <label class="c-nav-list__item">
+                        Africa
+                    <input type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" name="region" value="africa">
+                    </label>
+
+                    <label class="c-nav-list__item">
+                        Americas
+                    <input type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" name="region" value="americas">
+                    </label>
+
+                    <label class="c-nav-list__item">
+                        Asia
+                    <input type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" name="region" value="asia">
+                    </label>
+
+                    <label class="c-nav-list__item">
+                        Europe
+                    <input checked type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" name="region" value="europe">
+                    </label>
+
+                    <label class="c-nav-list__item">
+                        Oceania
+                    <input  type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" name="region" value="oceania">
+                    </label>
+
                 </nav>
 
                 <div class="c-counter">
-                    <span class="c-counter__current js-countries-visited">49</span>/250
+                    <p class="c-counter__description">Countries visited:</p>
+                    <p class="c-counter__count">
+                    <span class="c-counter__current js-countries-visited">49</span>/250</p>
                 </div>
 
             </header>

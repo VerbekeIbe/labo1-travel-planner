@@ -71,6 +71,7 @@ white-space: nowrap;
   background-color: var(--theme-color-xxxxx-dark);
 
   /* other */
+  box-shadow: 0 1px 4px 1px var(--theme-color-xxx-light);
 }
 .c-logo {
   display: flex;
@@ -113,20 +114,50 @@ white-space: nowrap;
   padding-bottom: 2rem;
   padding-top: 2rem;
 
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
+
+  cursor: pointer;
 }
 
 .c-nav-list__item:hover {
   border-color: var(--theme-color-base);
 }
 
+.c-nav-list__input:checked + c-nav-list__item {
+  border-color: var(--theme-color-base);
+}
+
 .c-nav-list__item + .c-nav-list__item {
-  margin-left: 1.5rem;
+  margin-left: 3rem;
 }
 .c-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  height: 100%;
+
+  padding:0 2rem;
+  margin-right: -2rem;
+
+  background: var(--theme-color-xxxxx-light);
+  color: var(--theme-color-xxxxx-dark);
 }
+
+.c-counter__description {
+
+}
+
 .c-counter__current {
+  color: var(--theme-color-base);
 }
+
+.c-counter__count {
+  font-size: 1.4rem;
+  font-weight: 600;
+
+}
+
 
 /* COUNTRIES */
 
@@ -147,7 +178,7 @@ white-space: nowrap;
 
 }
 
-.c-country__input:checked + .c-country__label {
+.c-country__input:checked + .c-country__label{
   opacity: 0.3;
 }
 
