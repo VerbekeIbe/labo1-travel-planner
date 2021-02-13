@@ -14,7 +14,7 @@ const renderCountries = (countries) => {
 
     for (const {name, alpha2Code, flag, nativeName} of countries) {
         countriesHTML+= ` <section class="c-country">
-        <input class="c-country__hidden-input o-hide-accessible" type="checkbox" name="country" id="${alpha2Code}">
+        <input checked class="c-country__hidden-input o-hide-accessible" type="checkbox" name="country" id="${alpha2Code}">
         <label class="c-country__label" for="${alpha2Code}">
             <div class="c-country__flag-holder">
         <img class="c-country__flag" src="${flag}" alt="The Flag of ${name}">
